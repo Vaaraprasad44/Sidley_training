@@ -1,0 +1,37 @@
+*
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin:0;
+    padding:0;
+    line-height: 1;
+}
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  url('./Acadia.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero__description {
+    font-size: 1.5rem;
+    color:  #fff;
+    max-width: 60ch;
+    margin-top: 20px;
+}
