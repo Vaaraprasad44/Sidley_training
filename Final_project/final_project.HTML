@@ -9,9 +9,19 @@
     <link rel="stylesheet" href="./style/modern-normalize.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/components/header.css">
+    <link rel="stylesheet" href="./style/components/mobile-nav.css">
+    <link rel="stylesheet" href="./style/components/hero.css">
+    <link rel="stylesheet" href="./style/components/pricing.css">
+    <link rel="stylesheet" href="./style/components/about.css">
+    <link rel="stylesheet" href="./style/components/testimonials.css">
+    <link rel="stylesheet" href="./style/components/features.css">
+    <link rel="stylesheet" href="./style/components/faq.css">
+    <link rel="stylesheet" href="./style/components/cta.css">
+    <link rel="stylesheet" href="./style/components/footer.css">
     <link rel = "stylesheet" href=" ./style/utility.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
     <title>final_project</title>
+    <script src = "./src/main.js" type="module"></script>
 </head>
 <body>
     <header class= "header container">
@@ -24,7 +34,7 @@
             />
             <span class = "header__title"> Studiox</span>
         </div>    
-        <button class = "header__bars" aria-label="Menu__button">
+        <button id = "bars-btn" class = "header__bars" aria-label="Menu__button">
             <svg
                 aria-hidden="true" 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -69,15 +79,285 @@
             <a href = "#" class = "btn header__enter-app-btn">Enter App</a>
         </nav>
     </header>
-    <!-- <main> -->
-        <!-- <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section> -->
-    <!-- </main> -->
-    <!-- <footer></footer> -->
+    <!-- mobile navigation -->
+    <div id = "mobile-nav" class = "mobile-nav">
+        <button id = "close-btn" class = "mobile-nav__close-btn"> Close</button>
+        <img src="./pics/logo.png" 
+                alt="Woman holding a cup" 
+                width="720"
+                height="972" 
+                class = "mobile-nav__logo"
+            />
+        <div class = "mobile-nav__social-container">
+                <a 
+                    href = "https://github.com" target="_blank" rel = "nonreferrer noopener"
+                    class = "mobile-nav__social"
+                    title = "Github"
+                    aria-label="Github__link">
+
+                    <i  aria-hidden="true" class="lni lni-github"></i>
+                </a>
+                <a 
+                    href = "https://discord.com" target="_blank" rel = "nonreferrer noopener"
+                    class = "mobile-nav__social"
+                    title = "Discord"
+                    aria-label="Discord__link">
+
+                    <i  aria-hidden="true" class="lni lni-discord"></i>
+                </a>
+                <a 
+                    href = "https://youtube.com" target="_blank" rel = "nonreferrer noopener"
+                    class = "mobile-nav__social"
+                    title = "Youtube"
+                    aria-label="Youtube__link">
+
+                    <i  aria-hidden="true" class="lni lni-youtube"></i>
+                </a>
+            </div>
+            <div class = "mobile-nav__separator"></div>
+            <a href = "#" class = "mobile-nav__sign-in-btn">Sign In</a>
+            <a href = "#" class = "btn mobile-nav__enter-app-btn">Enter App</a>
+    </div>
+    <main>
+        <section class = "hero container">
+            <img src = "./pics/hero.png"
+            alt = "Hero Image"
+            width = "1386"
+            height = "1809"
+            class = "hero__img"
+            />
+            <h1 class = "hero__title"> Become the web developer <br class = "hero__br" /> 
+                you were always destined to be
+            </h1>
+            <p class = "hero__description">Slaying the dragon is about facing your fears, 
+                pursuing meaning and transforming into the web 
+                developer you were always destined to be.
+            </p>
+            <p class = "hero__description2">
+                Here you will start your journey, it will not be easy
+                - you will suffer - but you will go all the way. Slaying
+                The Dragon is a learning platform for the bravest adventurer
+                aspiring to defeat the biggest dragon of all - web development.
+                <strong>I currently offer a CSS course</strong> and 
+                a <strong>JS course</strong>, with plans to release more courses
+                 soon, including  <strong>DSA</strong> - 
+                 <strong>ReactJS</strong> - <strong>NextJS</strong> 
+                 and more. You have decided upon your purpose - 
+                 <strong>you will slay the dragon.</strong>
+            </p>
+            <a href = "#" class = "hero__btn btn"> Preview CSS course</a>
+        </section>
+        <section class = "pricing container section">
+            <h2 class = "title"> courses</h2>
+            <div class = "pricing__box-container">
+                <div class = "pricing__box pricing__box-0margin pricing__box-css">
+                    <h3 class = "pricing__title"> css</h3>
+                    <p class = "pricing__description1">for beginners</p>
+                    <p class = "pricing__description2">Learn the basics of CSS and how to style your web pages.</p>
+                    <button class = "pricing__btn btn"> Buy now $50</button>
+                </div>
+                <div class = "pricing__box pricing__box-jav">
+                    <h3 class = "pricing__title"> javascript</h3>
+                    <p class = "pricing__description1">for beginners</p>
+                    <p class = "pricing__description2">Learn the basics of JavaScript and how to add interactivity to your web pages.</p>
+                    <button class = "pricing__btn btn"> Buy now $50</button>
+                </div>
+                <div class = "pricing__box pricing__box-react">
+                    <h3 class = "pricing__title">ReactJS</h3>
+                    <p class = "pricing__description1">for beginners</p>
+                    <p class = "pricing__description2">Learn the basics of ReactJS and how to build dynamic user interfaces.</p>
+                    <button class = "pricing__btn btn"> Buy now $50</button>
+                </div>
+                <div class = "pricing__box pricing__box-next">
+                    <h3 class = "pricing__title">NextJS</h3>
+                    <p class = "pricing__description1">for beginners</p>
+                    <p class = "pricing__description2">Learn the basics of NextJS and how to build server-side rendered applications.</p>
+                    <button class = "pricing__btn btn"> Buy now $50</button>
+                </div>
+            </div>
+        </section>
+        <section class = "about container section">
+            <h2 class = "title">About</h2>
+            <div class = "about__container">
+                <div class="about__item1">
+                    <h2 class="about__title"> Slaying the dragon </h2>
+                    <p class = "about__description1 ">This is a metaphor for the challenges
+                         and obstacles you will face on your journey to becoming a web developer.
+                    </p>
+                    <p class = "about__description2">
+                        The dragon represents the fear and uncertainty that comes with learning new skills and facing new challenges.
+                        Slaying the dragon is about overcoming these fears and pursuing your passion for web development.
+                    </p>
+                </div>
+                <div class="about__item2">
+                    <div>
+                        <h3 class = "about__label"> Channel total subscribers</h3>
+                        <p class = "about__stat"> 80,000+ subs </p>
+                    </div>
+                    <div>
+                        <h3 class = "about__label"> Channel total views</h3>
+                        <p class = "about__stat"> 3,000,000+ views </p>
+                    </div>
+                    <div>
+                        <h3 class = "about__label"> Channel total watch hours</h3>
+                        <p class = "about__stat"> 4,000+ hours </p>
+                    </div>
+                    <div>
+                        <h3 class = "about__label"> Channel total videos</h3>
+                        <p class = "about__stat"> 13+ videos  </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        </section>
+        <section class = "testimonial container section">
+            <h2 class = "title"> Love and Support</h2>
+            <h2 class = "testimonials__title">Testimonials</h2>
+            <p class = "testimonials__description">
+                students who have slayed the dragon and become web developers.
+            </p>
+            <div class= "testimonials__container">
+                <div class = "testimonials__box">
+                    <p class = "testimonial__comment">there is a dragon, 
+                        that needs slaying and you helped me through it
+                    </p>
+                    <p class = "testimonial__name">John Doe</p>
+                </div>
+                <div class = "testimonials__box testimonial__0margin">
+                    <p class = "testimonial__comment">there is a dragon, 
+                        that needs slaying and you helped me through it
+                    </p>
+                    <p class = "testimonial__name">Jane Smith</p>
+                </div>
+                <div class = "testimonials__box">
+                    <p class = "testimonial__comment">there is a dragon, 
+                        that needs slaying and you helped me through it
+                    </p>
+                    <p class = "testimonial__name">Alex Johnson</p>
+                </div>
+                <div class = "testimonials__box">
+                    <p class = "testimonial__comment">there is a dragon, 
+                        that needs slaying and you helped me through it
+                    </p>
+                    <p class = "testimonial__name">Emily Davis</p>
+                </div>
+                <div class = "testimonials__box">
+                    <p class = "testimonial__comment">there is a dragon, 
+                        that needs slaying and you helped me through it
+                    </p>
+                    <p class = "testimonial__name">Michael Brown</p>
+                </div>
+                <div class = "testimonials__box">
+                    <p class = "testimonial__comment">there is a dragon,
+                         that needs slaying and you helped me through it
+                    </p>
+                    <p class = "testimonial__name">Sarah Wilson</p>
+                </div>
+            </div>
+        </section>
+        <section class = "features container section">
+            <h2 class = "title">Features</h2>
+            <div class = "features__container">
+                <div class = "features__content">
+                    <h2 class = "features__title"> A Better way to Learn</h2>
+                    <p class = "features__description">Our platform offers a unique 
+                        learning experience that combines interactive lessons with real-world projects.
+                    </p>
+                </div>
+                <div class = "features__grid">
+                    <div class="features__box features__box0margin">
+                        <h3 class = "features__box-title"> Interactive Learning</h3>
+                        <p class = "features__box-description">Engage with interactive lessons
+                             that adapt to your learning style.
+                        </p>
+                    </div>
+                    <div class="features__box">
+                        <h3 class = "features__box-title"> Real-World Projects</h3>
+                        <p class = "features__box-description">Work on real-world projects
+                             that build your portfolio and skills.
+                        </p>
+                    </div>
+                    <div class="features__box">
+                        <h3 class = "features__box-title"> Community Support</h3>
+                        <p class = "features__box-description">Join a community of learners
+                             and get support from peers and mentors.
+                        </p>
+                    </div>
+                    <div class="features__box">
+                        <h3 class = "features__box-title"> Flexible Learning</h3>
+                        <p class = "features__box-description">Learn at your own pace with our flexible
+                             learning options.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class = "FAQ container section">
+            <h2 class = "title">FAQ</h2>
+            <h2 class = "faq__title"> Frequently asked questions</h2>
+            <p class = "faq__description">
+                Here are some common questions we receive from our users.
+            </p>
+            <div class = "faq__container">
+                <div class="faq__box faq__box0margin">
+                    <h3 class = "faq__box-title"> questions</h3>
+                    <p class = "faq__box-description"> answers</p>
+                </div>
+                <div class="faq__box">
+                    <h3 class = "faq__box-title"> questions</h3>
+                    <p class = "faq__box-description"> answers</p>
+                </div>
+                <div class="faq__box">
+                    <h3 class = "faq__box-title"> questions</h3>
+                    <p class = "faq__box-description"> answers</p>
+                </div>
+                <div class="faq__box">
+                    <h3 class = "faq__box-title"> questions</h3>
+                    <p class = "faq__box-description"> answers</p>
+                </div>
+                <div class="faq__box">
+                    <h3 class = "faq__box-title"> questions</h3>
+                    <p class = "faq__box-description"> answers</p>
+                </div>
+                <div class="faq__box">
+                    <h3 class = "faq__box-title"> questions</h3>
+                    <p class = "faq__box-description"> answers</p>
+                </div>
+                <div class="faq__box">
+                    <h3 class = "faq__box-title"> questions</h3>
+                    <p class = "faq__box-description"> answers</p>
+                </div>
+                <div class="faq__box">
+                    <h3 class = "faq__box-title"> questions</h3>
+                    <p class = "faq__box-description"> answers</p>
+                </div>
+                <div class="faq__box">
+                    <h3 class = "faq__box-title"> questions</h3>
+                    <p class = "faq__box-description"> answers</p>
+                </div>
+            </div>
+        </section>
+        <section class = "cta container section">
+            <img 
+            class = "cta__img"
+            src="./pics/cta.png" 
+            alt="cta image"
+            width="1020"
+            height="1407"
+            />
+            <h2 class = "cta__title"> Ready to slay the dragon?</h2>
+            <p class = "cta__description">
+                Join our community of web developers and start your journey today.
+            </p>
+            <a href = "#" class = "cta__btn btn"> Join now</a>
+        </section>
+    </main>
+    <footer>
+        <p class = "footer__description">
+            ~Studiox~
+        </p>
+    </footer>
 </body>
 </html>
