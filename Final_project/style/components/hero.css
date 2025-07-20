@@ -19,7 +19,7 @@
     line-height: 1;
 }
 
-.hero__description1{
+.hero__description{
     font-size: var(--size-sm);
     color: var(--clr-muted);
 }
@@ -46,8 +46,8 @@
     .hero__title{
         font-size: var(--size-4xl);
     }
-    
-    .hero__description1,
+
+    .hero__description,
     .hero__description2{
         font-size: var(--size-base);
     }
@@ -63,7 +63,7 @@
 
     }
 
-    .hero__description1{
+    .hero__description{
         max-width: 65ch;
         letter-spacing: -0.05em;
         margin-inline: auto;
@@ -99,7 +99,7 @@
         font-size: var(--size-6xl);
     }
     
-    .hero__description1,
+    .hero__description,
     .hero__description2{
         font-size: var(--size-lg);
     }

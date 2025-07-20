@@ -29,6 +29,7 @@
     color: var(--clr-text);
     font-size: var(--size-xs);
     font-weight: 400;
+    margin-bottom: 0.5rem;
 }
 
 .about__stat{
@@ -63,11 +64,11 @@
 /* LG */
 @media (min-width: 1024px){
     .about__description1{
-        max-width: 60ch;
+        max-width: 55ch;
     }
 
     .about__description2{
-        max-width: 60ch;
+        max-width: 55ch;
     }
     .about__item1{
         margin-bottom:0;
