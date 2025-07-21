@@ -1,0 +1,121 @@
+.pricing{
+    margin-top: 5rem;
+}
+
+.pricing__title{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin-bottom : 1rem;
+}
+
+
+.course__card{
+    background-color: #000000;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+.margin-null{
+    margin: 0;
+}
+
+.course__title{
+    font-size: 1.125rem;
+}
+
+.course__subtitle{
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.course__description{
+    font-size: 0.75rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.buy__button{
+    font-size: 0.75rem;
+}
+
+/* XS */
+@media (min-width: 475px){
+    .pricing__title{
+        font-size: 0.875rem;
+    }
+
+    .course__title{
+        font-size: 1.25rem;
+    }
+
+    .course__subtitle, .course__description{
+        font-size: 0.875em;
+    }
+    .buy__button{
+        font-size: 0.875em;
+    }
+}
+/* SM */
+/* @media (min-width: 640px){} */
+/* MD */
+/* @media (min-width: 768px){} */
+
+/* LG */
+@media (min-width: 1024px){
+    .pricing__grid-container{
+        display:grid;
+        grid-template-areas: 
+            'CSS CSS CSS JS'
+            'ReactJS ReactJS NextJS NextJS';
+        gap:1rem;
+    }
+    .course__card{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0;
+        gap: 2rem;
+    }
+
+    .course__subtitle{
+        margin-bottom: 0;
+    }
+
+    .box__CSS{
+        grid-area: CSS;
+    }
+    .box__JS{
+        grid-area: JS;
+    }
+    .box__ReactJS{
+        grid-area: ReactJS;
+    }
+    .box__NextJS{
+        grid-area: NextJS;
+    }
+    
+
+}
+
+/* XL */
+@media (min-width: 1280px){
+        .pricing__title{
+        font-size: 2rem;
+    }
+
+    .course__title{
+        font-size: 1.5rem; 
+    }
+
+    .course__subtitle, .course__description{
+        font-size: 1rem;
+    }
+    .buy__button{
+        font-size: 1rem;
+    }
+}
+/* 2XL */
+/* @media (min-width: 1536px){}  */
